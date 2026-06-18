@@ -13,7 +13,7 @@ class TiketVelvet extends Tiket {
 
     // Overriding Tahap 5
     public function hitungTotalHarga() {
-        return $this->harga_dasar_tiket;
+        return ($this->jumlah_kursi * $this->harga_dasar_tiket) * 1.50;
     }
 
     public function tampilkanInfoFasilitas() {

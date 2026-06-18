@@ -14,7 +14,7 @@ class TiketRegular extends Tiket {
 
     // Overriding Tahap 5
     public function hitungTotalHarga() {
-        return $this->harga_dasar_tiket;
+        return $this->jumlah_kursi * $this->harga_dasar_tiket;
     }
 
     public function tampilkanInfoFasilitas() {
